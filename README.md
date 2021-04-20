@@ -2,7 +2,7 @@
 
 > The website housing documentation for guildscript
 
-Forked from [discordjs/website](https://github.com/discordjs/website).
+Forked from [discordjs/website](https://github.com/discordjs/website)!
 
 ## Project setup
 ```
