@@ -2,50 +2,46 @@
   <div id="home">
     <slide id="jumbotron">
       <logo :light="true" :konami="konami" id="logo" />
-      <code>npm install discord.js</code><br />
+      <h1>GuildScript</h1>
+      <code>npm install guildscript</code><br />
     </slide>
 
     <section id="info">
       <div class="info-item">
         <h2>About</h2>
         <p>
-          discord.js is a powerful <a href="https://nodejs.org/">node.js</a> module that allows you to interact with the
-          <a href="https://discordapp.com/developers/docs/intro">Discord API</a> very easily.
-          It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.
+          GuildScript is a <a href="https://nodejs.org/">node.js</a> module that allows you to interact with the
+          <a href="https://guildedapi.com">Guilded API</a>.
+          It was designed to be simple to use.
         </p>
         <p>
-          Usability, consistency, and performance are key focuses of discord.js, and it also has nearly 100% coverage of the Discord API.
-          It receives new Discord features shortly after they arrive in the API.
+          It is currently in beta and is being worked on.
         </p>
       </div>
 
       <div class="info-item">
         <h2>Example</h2>
-        <pre><code class="javascript" v-hljs>const Discord = require('discord.js');
-const client = new Discord.Client();
+        <pre><code class="javascript" v-hljs>const Guilded = require('guildscript');
+const client = new Guilded.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on('ready' () => {
+    console.log(`Logged in as ${client.user.name}.`);
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
+client.on('message' () => {
+    if(message.content.toString() === '!ping')
+        message.channel.send('pong!');
 });
 
-client.login('token');</code></pre>
+client.login('email', 'username');</code></pre>
       </div>
 
       <div class="info-item">
         <h2>Why?</h2>
         <p>
           <ul>
-            <li>Object-oriented</li>
-            <li>Speedy and efficient</li>
-            <li>Feature-rich</li>
-            <li>Flexible</li>
-            <li>100% Promise-based</li>
+            <li>Ease of use</li>
+            <li>IDK I'm a programmer not a marketing person</li>
           </ul>
         </p>
       </div>
@@ -60,7 +56,7 @@ client.login('token');</code></pre>
 
       <div class="full-info-item">
         <router-link to="/docs" class="big-ass-btn">Get started</router-link>
-        <a href="https://discord.gg/bRCvFy9" class="big-ass-btn discord">Discord</a>
+        <a href="https://www.guilded.gg/guilded-api" class="big-ass-btn guilded">Guilded Team</a>
       </div>
     </section>
   </div>
@@ -195,8 +191,8 @@ export default {
         margin-left: 8px;
       }
 
-      &.discord {
-        background-color: #7289da;
+      &.guilded {
+        background-color: #ffb326;
 
         &:hover {
           background: lighten(#7289da, 10%);

@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   pwa: {
-    name: 'Discord.js',
+    name: 'GuildScript',
     themeColor: '#33b5e5',
     msTileColor: '#282b30',
     iconPaths: {

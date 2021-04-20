@@ -1,6 +1,8 @@
-# discord.js website
+# GuildScript website
 
-> The website housing documentation for discord.js
+> The website housing documentation for guildscript
+
+Forked from [discordjs/website](https://github.com/discordjs/website).
 
 ## Project setup
 ```

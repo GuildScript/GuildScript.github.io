@@ -41,7 +41,7 @@ workbox.routing.setDefaultHandler(
 
 // Network-first for docs data pulled from GitHub
 workbox.routing.registerRoute(
-  /^https:\/\/raw\.githubusercontent\.com\/discordjs\/.*\.json/i,
+  /^https:\/\/raw\.githubusercontent\.com\/guildscript\/.*\.json/i,
   workbox.strategies.networkFirst({
     cacheName: 'djs-docs-v1',
     plugins: [
