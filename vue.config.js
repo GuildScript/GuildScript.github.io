@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
   pwa: {
     name: 'GuildScript',
-    themeColor: '#33b5e5',
+    themeColor: '#810f85',
     msTileColor: '#282b30',
     iconPaths: {
       favicon32: 'static/icons/favicon-32x32.png',

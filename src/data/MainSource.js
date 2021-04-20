@@ -5,7 +5,7 @@ export default new DocsSource({
   id: 'main',
   name: 'Main library',
   global: 'Guilded',
-  repo: 'WilsontheWolf/guildscript-test',
+  repo: 'GuildScript/GuildScript',
   defaultTag: 'master',
   branchFilter: branch => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
 });

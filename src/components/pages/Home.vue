@@ -195,7 +195,7 @@ export default {
         background-color: #ffb326;
 
         &:hover {
-          background: lighten(#7289da, 10%);
+          background: lighten(#ffb326, 10%);
         }
       }
     }
